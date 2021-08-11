@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <title>Lean CMS</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="./index.html">CMS</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">
+                                Admin
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./hayat.html">Hayat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="alert" class="nav-link" href="#">Sehhaty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Rasd</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0">
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
+                            Logout
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <main role="main" class="container">
+            <div
+                class="row mt-4 pt-4 pb-4"
+                name="controlpanel"
+                style="border-bottom: solid rgb(216, 211, 211) 1px;"
+            >
+                <div class="col" name="Create Space">
+                    <h2>
+                        Create New
+                    </h2>
+                </div>
+                <div class="col" name="Create User">
+                  <a href="/createSpace.html" style="text-decoration: none;"> <button class="btn btn-secondary btn-lg">Create Space</button></a>
+                </div>
+                <div class="col" name="Create User">
+                  <a href="/createUser.html" style="text-decoration: none;"> <button class="btn btn-secondary btn-lg">Create User</button></a>
+                </div>
+            </div>
+            <div
+                class="row mt-4 pt-4 pb-4"
+                name="spaces"
+                style="border-bottom: solid rgb(216, 211, 211) 1px;"
+            >
+                <div class="col-4" name="Create Space">
+                    <h2>
+                        Manage Spaces
+                    </h2>
+                </div>
+                <div class="col" name="spaces">
+                  <table class="table ">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Project</th>
+                        <th scope="col" colspan="2">Manage</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Hayat</td>
+                        <td ><button class="btn btn-warning">visit</button></td>
+                        <td><a href="/manageSpace.html"> <button class="btn btn-primary">Edit</button></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Sehhaty</td>
+                        <td ><button class="btn btn-warning">visit</button></td>
+                        <td><a href="/manageSpace.html"> <button class="btn btn-primary">Edit</button></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="1">RSD</td>
+                        <td ><button class="btn btn-warning">visit</button></td>
+                        <td><a href="/manageSpace.html"> <button class="btn btn-primary">Edit</button></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td colspan="1">Lean Website</td>
+                        <td ><button class="btn btn-warning">visit</button></td>
+                        <td><a href="/manageSpace.html"> <button class="btn btn-primary">Edit</button></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                </div>
+            </div>
+            <div
+                class="row mt-4 pt-4 pb-4"
+                name="users"
+                style="border-bottom: solid rgb(216, 211, 211) 1px;"
+            >
+                <div class="col-4" name="Create Space">
+                    <h2>
+                        Manage Users
+                    </h2>
+                </div>
+                <div class="col" name="users">
+                  <table class="table ">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Manage</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Lamees@lean.sa</td>
+                        <td class="alert-success">Active</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Ahmed@MOH.sa</td>
+                        <td class="alert-success">Active</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="1">Sarah@SFDA.sa</td>
+                        <td class="alert-danger">Disabled</td>
+                        <td><button class="btn btn-primary">Edit</button></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
